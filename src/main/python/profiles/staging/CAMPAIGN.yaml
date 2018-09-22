@@ -1,0 +1,12 @@
+project : staging
+
+daily : SELECT * FROM `<DATABASE>.<TABLE>` WHERE transaction_date >= CAST('{startDate}' AS TIMESTAMP) AND transaction_date < CAST('{endDate}' AS TIMESTAMP)
+monthly : SELECT * FROM `staging.source.CAMPAIGN` WHERE transaction_date >= CAST('{startDate}' AS TIMESTAMP) AND transaction_date < CAST('{endDate}' AS TIMESTAMP)
+is_legacy_sql : false
+
+temp_dataset : temp_auto_delete
+format : csv
+delimiter : '|'
+output_file_ext : .txt.gz
+output_file_date : '%d%m%Y'
+compress : true

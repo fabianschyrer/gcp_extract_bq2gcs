@@ -1,0 +1,7 @@
+
+password_path: gs://<BUCKETNAME>/mail_encrypted_key.txt
+sender: user@domain.com
+
+body: mail-template.html
+server: smtp.gmail.com
+port: 587

@@ -1,0 +1,7 @@
+
+password_path: gs://<BUCKETNAME>/extractor_keys/mail_sender_key.txt
+sender: user@domain.com
+
+body: mail-template.html
+server: smtp.gmail.com
+port: 587

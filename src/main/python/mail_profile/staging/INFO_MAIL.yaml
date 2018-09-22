@@ -1,0 +1,7 @@
+
+password_path: <PATH_TO_PASSWORD>
+sender: user@domain.com
+
+body: mail-template.html
+server: smtp.gmail.com
+port: 587
