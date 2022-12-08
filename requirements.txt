@@ -1,5 +1,5 @@
 cachetools==2.0.1
-certifi==2018.4.16
+certifi==2022.12.7
 chardet==3.0.4
 coverage==4.5.1
 google-api-core==1.1.2
